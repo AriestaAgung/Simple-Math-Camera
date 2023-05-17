@@ -10,11 +10,13 @@
 		E5AC8A832A13CAF600EA7158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC8A822A13CAF600EA7158 /* AppDelegate.swift */; };
 		E5AC8A852A13CAF600EA7158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC8A842A13CAF600EA7158 /* SceneDelegate.swift */; };
 		E5AC8A872A13CAF600EA7158 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC8A862A13CAF600EA7158 /* HomeViewController.swift */; };
-		E5AC8A8A2A13CAF600EA7158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AC8A882A13CAF600EA7158 /* Main.storyboard */; };
 		E5AC8A8C2A13CAF900EA7158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AC8A8B2A13CAF900EA7158 /* Assets.xcassets */; };
 		E5AC8A8F2A13CAF900EA7158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AC8A8D2A13CAF900EA7158 /* LaunchScreen.storyboard */; };
 		E5CA83032A152BD00071C452 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA83022A152BD00071C452 /* HomeInteractor.swift */; };
 		E5CA83052A152C4E0071C452 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA83042A152C4E0071C452 /* HomePresenter.swift */; };
+		E5CA83072A15388A0071C452 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CA83062A15388A0071C452 /* HomeViewController.xib */; };
+		E5CA83092A1538DC0071C452 /* FeatureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA83082A1538DC0071C452 /* FeatureFactory.swift */; };
+		E5CA830B2A15399E0071C452 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA830A2A15399E0071C452 /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +24,14 @@
 		E5AC8A822A13CAF600EA7158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5AC8A842A13CAF600EA7158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E5AC8A862A13CAF600EA7158 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E5AC8A892A13CAF600EA7158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5AC8A8B2A13CAF900EA7158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5AC8A8E2A13CAF900EA7158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5AC8A902A13CAF900EA7158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5CA83022A152BD00071C452 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		E5CA83042A152C4E0071C452 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		E5CA83062A15388A0071C452 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E5CA83082A1538DC0071C452 /* FeatureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFactory.swift; sourceTree = "<group>"; };
+		E5CA830A2A15399E0071C452 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,6 @@
 			children = (
 				E5CA83002A1521380071C452 /* BaseApp */,
 				E5CA82FF2A1521160071C452 /* Modules */,
-				E5AC8A882A13CAF600EA7158 /* Main.storyboard */,
 			);
 			path = mathCamera;
 			sourceTree = "<group>";
@@ -71,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				E5CA83012A15218D0071C452 /* Home */,
+				E5CA83082A1538DC0071C452 /* FeatureFactory.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -93,6 +97,8 @@
 				E5AC8A862A13CAF600EA7158 /* HomeViewController.swift */,
 				E5CA83022A152BD00071C452 /* HomeInteractor.swift */,
 				E5CA83042A152C4E0071C452 /* HomePresenter.swift */,
+				E5CA83062A15388A0071C452 /* HomeViewController.xib */,
+				E5CA830A2A15399E0071C452 /* HomeRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -157,7 +163,7 @@
 			files = (
 				E5AC8A8F2A13CAF900EA7158 /* LaunchScreen.storyboard in Resources */,
 				E5AC8A8C2A13CAF900EA7158 /* Assets.xcassets in Resources */,
-				E5AC8A8A2A13CAF600EA7158 /* Main.storyboard in Resources */,
+				E5CA83072A15388A0071C452 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AC8A872A13CAF600EA7158 /* HomeViewController.swift in Sources */,
+				E5CA83092A1538DC0071C452 /* FeatureFactory.swift in Sources */,
+				E5CA830B2A15399E0071C452 /* HomeRouter.swift in Sources */,
 				E5AC8A832A13CAF600EA7158 /* AppDelegate.swift in Sources */,
 				E5AC8A852A13CAF600EA7158 /* SceneDelegate.swift in Sources */,
 				E5CA83052A152C4E0071C452 /* HomePresenter.swift in Sources */,
@@ -179,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E5AC8A882A13CAF600EA7158 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5AC8A892A13CAF600EA7158 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E5AC8A8D2A13CAF900EA7158 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

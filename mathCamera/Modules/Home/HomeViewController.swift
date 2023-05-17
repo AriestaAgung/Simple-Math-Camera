@@ -18,6 +18,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var galleryButton: UIButton!
     @IBOutlet weak var cameraButton: UIButton!
     
+    private var presenter: HomePresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -30,6 +32,10 @@ class HomeViewController: UIViewController {
         self.cameraButton.setTitle("Choose From Camera", for: .normal)
         self.cameraButton.addTarget(self, action: #selector(openCameraAction), for: .touchUpInside)
         self.galleryButton.addTarget(self, action: #selector(openGallerycAction), for: .touchUpInside)
+    }
+    
+    func setupData(presenter: HomePresenter) {
+        self.presenter = presenter
     }
     
     private func openMedia(with type: MediaPickerType) {
