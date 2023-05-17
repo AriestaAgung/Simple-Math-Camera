@@ -1,0 +1,29 @@
+//
+//  ViewController.swift
+//  mathCamera
+//
+//  Created by BRIMO on 16/05/23.
+//
+
+import UIKit
+
+class HomeViewController: UIViewController {
+
+    @IBOutlet weak var emptyLabel: UILabel!
+    @IBOutlet weak var galleryButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+    }
+    
+    private func setupUI() {
+        self.galleryButton.layer.cornerRadius = 10
+        self.cameraButton.layer.cornerRadius = 10
+        self.galleryButton.setTitle("Choose From Gallery", for: .normal)
+        self.cameraButton.setTitle("Choose From Camera", for: .normal)
+    }
+
+}
+
