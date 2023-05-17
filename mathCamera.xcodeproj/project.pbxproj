@@ -17,6 +17,11 @@
 		E5CA83072A15388A0071C452 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CA83062A15388A0071C452 /* HomeViewController.xib */; };
 		E5CA83092A1538DC0071C452 /* FeatureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA83082A1538DC0071C452 /* FeatureFactory.swift */; };
 		E5CA830B2A15399E0071C452 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA830A2A15399E0071C452 /* HomeRouter.swift */; };
+		E5CA830F2A153E130071C452 /* ResultPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA830D2A153E130071C452 /* ResultPreviewViewController.swift */; };
+		E5CA83102A153E130071C452 /* ResultPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CA830E2A153E130071C452 /* ResultPreviewViewController.xib */; };
+		E5CA83122A153E200071C452 /* ResultPreviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA83112A153E200071C452 /* ResultPreviewInteractor.swift */; };
+		E5CA83142A153E2C0071C452 /* ResultPreviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA83132A153E2C0071C452 /* ResultPreviewPresenter.swift */; };
+		E5CA83162A153E350071C452 /* ResultPreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA83152A153E350071C452 /* ResultPreviewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		E5CA83062A15388A0071C452 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		E5CA83082A1538DC0071C452 /* FeatureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFactory.swift; sourceTree = "<group>"; };
 		E5CA830A2A15399E0071C452 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		E5CA830D2A153E130071C452 /* ResultPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPreviewViewController.swift; sourceTree = "<group>"; };
+		E5CA830E2A153E130071C452 /* ResultPreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultPreviewViewController.xib; sourceTree = "<group>"; };
+		E5CA83112A153E200071C452 /* ResultPreviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPreviewInteractor.swift; sourceTree = "<group>"; };
+		E5CA83132A153E2C0071C452 /* ResultPreviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPreviewPresenter.swift; sourceTree = "<group>"; };
+		E5CA83152A153E350071C452 /* ResultPreviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPreviewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 		E5CA82FF2A1521160071C452 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E5CA830C2A153DB60071C452 /* Preview */,
 				E5CA83012A15218D0071C452 /* Home */,
 				E5CA83082A1538DC0071C452 /* FeatureFactory.swift */,
 			);
@@ -94,13 +105,25 @@
 		E5CA83012A15218D0071C452 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E5AC8A862A13CAF600EA7158 /* HomeViewController.swift */,
 				E5CA83022A152BD00071C452 /* HomeInteractor.swift */,
 				E5CA83042A152C4E0071C452 /* HomePresenter.swift */,
-				E5CA83062A15388A0071C452 /* HomeViewController.xib */,
 				E5CA830A2A15399E0071C452 /* HomeRouter.swift */,
+				E5AC8A862A13CAF600EA7158 /* HomeViewController.swift */,
+				E5CA83062A15388A0071C452 /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E5CA830C2A153DB60071C452 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				E5CA83112A153E200071C452 /* ResultPreviewInteractor.swift */,
+				E5CA83132A153E2C0071C452 /* ResultPreviewPresenter.swift */,
+				E5CA83152A153E350071C452 /* ResultPreviewRouter.swift */,
+				E5CA830D2A153E130071C452 /* ResultPreviewViewController.swift */,
+				E5CA830E2A153E130071C452 /* ResultPreviewViewController.xib */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5CA83102A153E130071C452 /* ResultPreviewViewController.xib in Resources */,
 				E5AC8A8F2A13CAF900EA7158 /* LaunchScreen.storyboard in Resources */,
 				E5AC8A8C2A13CAF900EA7158 /* Assets.xcassets in Resources */,
 				E5CA83072A15388A0071C452 /* HomeViewController.xib in Resources */,
@@ -175,11 +199,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AC8A872A13CAF600EA7158 /* HomeViewController.swift in Sources */,
+				E5CA83162A153E350071C452 /* ResultPreviewRouter.swift in Sources */,
 				E5CA83092A1538DC0071C452 /* FeatureFactory.swift in Sources */,
 				E5CA830B2A15399E0071C452 /* HomeRouter.swift in Sources */,
 				E5AC8A832A13CAF600EA7158 /* AppDelegate.swift in Sources */,
+				E5CA830F2A153E130071C452 /* ResultPreviewViewController.swift in Sources */,
 				E5AC8A852A13CAF600EA7158 /* SceneDelegate.swift in Sources */,
+				E5CA83142A153E2C0071C452 /* ResultPreviewPresenter.swift in Sources */,
 				E5CA83052A152C4E0071C452 /* HomePresenter.swift in Sources */,
+				E5CA83122A153E200071C452 /* ResultPreviewInteractor.swift in Sources */,
 				E5CA83032A152BD00071C452 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

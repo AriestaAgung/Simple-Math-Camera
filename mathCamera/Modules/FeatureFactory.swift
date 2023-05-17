@@ -22,4 +22,13 @@ extension FeatureFactory {
         vc.setupData(presenter: HomePresenter(model: presenterModel))
         return vc
     }
+    func createPreview() -> ResultPreviewViewController {
+        let vc = ResultPreviewViewController()
+        let presenterModel = ResultPreviewPresenterModel(
+            viewController: vc,
+            interactor: ResultPreviewInteractor.shared,
+            router: ResultPreviewRouter.shared
+        )
+        return vc
+    }
 }
