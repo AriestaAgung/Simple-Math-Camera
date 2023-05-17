@@ -322,6 +322,8 @@
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mathCamera/BaseApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "mathCam need to access your camera to detect the operations";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "matchCam need to access your photo gallery to detect the operations";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -350,6 +352,8 @@
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mathCamera/BaseApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "mathCam need to access your camera to detect the operations";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "matchCam need to access your photo gallery to detect the operations";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
