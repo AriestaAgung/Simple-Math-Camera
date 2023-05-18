@@ -25,7 +25,8 @@ class ResultPreviewInteractor {
 
 extension ResultPreviewInteractor {
     func processImage(image: UIImage) -> [String]? {
-        let requestHandler = VNImageRequestHandler(cgImage: image.cgImage)
+        guard let cgImage = image.cgImage else {return []}
+        let requestHandler = VNImageRequestHandler(cgImage: cgImage)
         let recognizeRequest = VNRecognizeTextRequest { request, err in
             guard let observations = request.results as? [VNRecognizedTextObservation] else {
                 return
@@ -34,9 +35,9 @@ extension ResultPreviewInteractor {
             let recognizedStrings = observations.compactMap{ observation in
                 observation.topCandidates(1).first?.string
             }
-            DispatchQueue.main.async {
-                return recognizedStrings
-            }
+//            DispatchQueue.main.async {
+//                return recognizedStrings
+//            }
         }
         
         recognizeRequest.recognitionLevel = .accurate

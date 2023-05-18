@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 class FeatureFactory {
     static let shared: FeatureFactory = FeatureFactory()
 }
@@ -22,13 +22,16 @@ extension FeatureFactory {
         vc.setupData(presenter: HomePresenter(model: presenterModel))
         return vc
     }
-    func createPreview() -> ResultPreviewViewController {
+    func createPreview(with image: UIImage) -> ResultPreviewViewController {
         let vc = ResultPreviewViewController()
-        let presenterModel = ResultPreviewPresenterModel(
+        let presenterBuilder = ResultPreviewPresenterModel(
             viewController: vc,
             interactor: ResultPreviewInteractor.shared,
-            router: ResultPreviewRouter.shared
+            router: ResultPreviewRouter.shared,
+            dataModel: ResultPreviewDataModel(pickedImage: image)
         )
+        let presenter = ResultPreviewPresenter(builder: presenterBuilder)
+        vc.setupData(presenter: presenter)
         return vc
     }
 }

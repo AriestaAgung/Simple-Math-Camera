@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 struct HomePresenterModel {
     let viewController: HomeViewController
     let interactor: HomeInteractor
@@ -15,11 +15,18 @@ struct HomePresenterModel {
 
 protocol HomePresenterProtocol {
     
+    func navigateToResultPreview(image: UIImage)
 }
 
 class HomePresenter {
     private var presenterModel: HomePresenterModel!
     init(model: HomePresenterModel) {
         self.presenterModel = model
+    }
+}
+
+extension HomePresenter: HomePresenterProtocol {
+    func navigateToResultPreview(image: UIImage) {
+        presenterModel.router.navigateToPreview(from: presenterModel.viewController, with: image)
     }
 }

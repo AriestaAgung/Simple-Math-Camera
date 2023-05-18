@@ -20,13 +20,13 @@ class ResultPreviewViewController: UIViewController {
     private var presenter: ResultPreviewPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        self.previewImageView.image = presenter.getImage()
     }
 
     func setupData(presenter: ResultPreviewPresenter) {
         self.presenter = presenter
     }
+    
     
 
 }
