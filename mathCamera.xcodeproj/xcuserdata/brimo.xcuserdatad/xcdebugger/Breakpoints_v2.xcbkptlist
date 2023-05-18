@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "ED9E1354-580D-46FD-8897-59BA42DA00D9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9224694-DB0C-4D13-9E25-1CA0BEB2F62C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathCamera/Modules/Preview/ResultPreviewViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E9224694-DB0C-4D13-9E25-1CA0BEB2F62C - bda89d41fdbdd948"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; () in mathCamera.ResultPreviewViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "mathCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brimo/Documents/mathCam/mathCamera/mathCamera/Modules/Preview/ResultPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "3120">
+               </Location>
+               <Location
+                  uuid = "E9224694-DB0C-4D13-9E25-1CA0BEB2F62C - bda89d41fdbdd948"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; () in mathCamera.ResultPreviewViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "mathCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brimo/Documents/mathCam/mathCamera/mathCamera/Modules/Preview/ResultPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "3244">
+               </Location>
+               <Location
+                  uuid = "E9224694-DB0C-4D13-9E25-1CA0BEB2F62C - bda89d41fdbdd948"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; () in mathCamera.ResultPreviewViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "mathCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brimo/Documents/mathCam/mathCamera/mathCamera/Modules/Preview/ResultPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2D457B1-2D7D-46F9-8C90-EE37A7C6AFBE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathCamera/Modules/Preview/ResultPreviewViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F2D457B1-2D7D-46F9-8C90-EE37A7C6AFBE - bda89d41fdbdd9f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; () in mathCamera.ResultPreviewViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "mathCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brimo/Documents/mathCam/mathCamera/mathCamera/Modules/Preview/ResultPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1668">
+               </Location>
+               <Location
+                  uuid = "F2D457B1-2D7D-46F9-8C90-EE37A7C6AFBE - bda89d41fdbdd9f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; () in mathCamera.ResultPreviewViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "mathCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brimo/Documents/mathCam/mathCamera/mathCamera/Modules/Preview/ResultPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1792">
+               </Location>
+               <Location
+                  uuid = "F2D457B1-2D7D-46F9-8C90-EE37A7C6AFBE - bda89d41fdbdd9f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; () in mathCamera.ResultPreviewViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "mathCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brimo/Documents/mathCam/mathCamera/mathCamera/Modules/Preview/ResultPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "700">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA204BCC-BD79-4E2A-BE0B-5554B408DEC8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathCamera/Modules/Preview/ResultPreviewPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "getProcessedExpression(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

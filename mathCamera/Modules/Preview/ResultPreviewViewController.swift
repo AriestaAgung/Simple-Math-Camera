@@ -23,7 +23,12 @@ class ResultPreviewViewController: UIViewController {
         self.previewImageView.image = presenter.getImage()
         self.presenter.getString(image: presenter.getImage()) { texts in
             DispatchQueue.main.async {
-                self.expressionLabel.text = texts?.first                
+                if self.presenter.getProcessedExpression(text: texts?.first ?? "").0 != nil {
+                    self.expressionLabel.text = (texts?.first ?? "") + " = " + (self.presenter.getProcessedExpression(text: texts?.first ?? "").0?.description ?? "0")
+                } else {
+                    self.expressionLabel.text = (texts?.first ?? "") + " " + (self.presenter.getProcessedExpression(text: texts?.first ?? "").1 ?? "")
+                }
+                
             }
         }
     }
