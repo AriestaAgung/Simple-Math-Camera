@@ -16,16 +16,17 @@ struct ImagePreviewViewModel {
 
 
 protocol ResultPreviewUseCase {
-    func processImage(image: UIImage) -> [String]?
+    func processImage(image: UIImage)
 }
 
 class ResultPreviewInteractor {
     static let shared: ResultPreviewInteractor = ResultPreviewInteractor()
+    var didGetText: (([String]) -> Void)?
 }
 
 extension ResultPreviewInteractor {
-    func processImage(image: UIImage) -> [String]? {
-        guard let cgImage = image.cgImage else {return []}
+    func processImage(image: UIImage){
+        guard let cgImage = image.cgImage else {return}
         let requestHandler = VNImageRequestHandler(cgImage: cgImage)
         let recognizeRequest = VNRecognizeTextRequest { request, err in
             guard let observations = request.results as? [VNRecognizedTextObservation] else {
@@ -35,19 +36,19 @@ extension ResultPreviewInteractor {
             let recognizedStrings = observations.compactMap{ observation in
                 observation.topCandidates(1).first?.string
             }
-//            DispatchQueue.main.async {
-//                return recognizedStrings
-//            }
+            
+            self.didGetText?(recognizedStrings)
+            
         }
         
         recognizeRequest.recognitionLevel = .accurate
         DispatchQueue.global(qos: .userInitiated).async {
             do {
                 try requestHandler.perform([recognizeRequest])
+                
             } catch {
                 print(error.localizedDescription)
             }
         }
-        return nil
     }
 }

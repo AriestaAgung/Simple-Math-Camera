@@ -21,6 +21,7 @@ struct ResultPreviewPresenterModel {
 
 protocol ResultPreviewPresenterProtocol {
 //    func getString(image: UIImage) -> [String]?
+    func getString(image: UIImage, completion: @escaping ([String]?) -> Void)
     func getImage() -> UIImage
 }
 
@@ -33,9 +34,13 @@ class ResultPreviewPresenter {
 }
 
 extension ResultPreviewPresenter: ResultPreviewPresenterProtocol {
-//    func getString(image: UIImage) -> [String]? {
-//        let string = presenterModel.interactor.processImage(image: image)
-//    }
+    func getString(image: UIImage, completion: @escaping ([String]?) -> Void) {
+        presenterModel.interactor.processImage(image: image)
+        presenterModel.interactor.didGetText = { texts in
+            dump(texts)
+            completion(texts)
+        }
+    }
     func getImage() -> UIImage {
         return presenterModel.dataModel.pickedImage
     }

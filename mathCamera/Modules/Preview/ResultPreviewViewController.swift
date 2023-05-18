@@ -21,6 +21,11 @@ class ResultPreviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.previewImageView.image = presenter.getImage()
+        self.presenter.getString(image: presenter.getImage()) { texts in
+            DispatchQueue.main.async {
+                self.expressionLabel.text = texts?.first                
+            }
+        }
     }
 
     func setupData(presenter: ResultPreviewPresenter) {
