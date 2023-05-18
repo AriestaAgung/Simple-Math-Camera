@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 struct ResultPreviewPresenterModel {
     let viewController: ResultPreviewViewController
     let interactor: ResultPreviewInteractor
@@ -14,12 +14,18 @@ struct ResultPreviewPresenterModel {
 }
 
 protocol ResultPreviewPresenterProtocol {
-    
+    func getString(image: UIImage) -> [String]?
 }
 
 class ResultPreviewPresenter {
     private var presenterModel: ResultPreviewPresenterModel!
     init(model: ResultPreviewPresenterModel) {
         self.presenterModel = model
+    }
+}
+
+extension ResultPreviewPresenter: ResultPreviewPresenterProtocol {
+    func getString(image: UIImage) -> [String]? {
+        let string = presenterModel.interactor.processImage(image: image)
     }
 }

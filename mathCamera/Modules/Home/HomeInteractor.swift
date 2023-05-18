@@ -8,6 +8,12 @@
 import Foundation
 import UIKit
 
+struct ImageViewModel {
+    let image: UIImage?
+    let data: Data?
+    let stringOps: String?
+}
+
 protocol HomeUseCase {
     func fetchCameraImage() -> UIImage?
     func fetchGalleryImage() -> UIImage?
