@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51852F82A1FC7E300F306A5 /* mathCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51852F72A1FC7E300F306A5 /* mathCameraTests.swift */; };
+		E51853002A1FC85C00F306A5 /* ResultPreviewInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51852FF2A1FC85C00F306A5 /* ResultPreviewInteractorTests.swift */; };
 		E5AC8A832A13CAF600EA7158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC8A822A13CAF600EA7158 /* AppDelegate.swift */; };
 		E5AC8A852A13CAF600EA7158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC8A842A13CAF600EA7158 /* SceneDelegate.swift */; };
 		E5AC8A872A13CAF600EA7158 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC8A862A13CAF600EA7158 /* HomeViewController.swift */; };
@@ -24,7 +26,20 @@
 		E5CA83162A153E350071C452 /* ResultPreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA83152A153E350071C452 /* ResultPreviewRouter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E51852F92A1FC7E300F306A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5AC8A772A13CAF600EA7158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5AC8A7E2A13CAF600EA7158;
+			remoteInfo = mathCamera;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E51852F52A1FC7E200F306A5 /* mathCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mathCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51852F72A1FC7E300F306A5 /* mathCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mathCameraTests.swift; sourceTree = "<group>"; };
+		E51852FF2A1FC85C00F306A5 /* ResultPreviewInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPreviewInteractorTests.swift; sourceTree = "<group>"; };
 		E5AC8A7F2A13CAF600EA7158 /* mathCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mathCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AC8A822A13CAF600EA7158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5AC8A842A13CAF600EA7158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E51852F22A1FC7E200F306A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5AC8A7C2A13CAF600EA7158 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,10 +77,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E51852F62A1FC7E300F306A5 /* mathCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				E51852FE2A1FC82B00F306A5 /* ResultPreviewTest */,
+				E51852F72A1FC7E300F306A5 /* mathCameraTests.swift */,
+			);
+			path = mathCameraTests;
+			sourceTree = "<group>";
+		};
+		E51852FE2A1FC82B00F306A5 /* ResultPreviewTest */ = {
+			isa = PBXGroup;
+			children = (
+				E51852FF2A1FC85C00F306A5 /* ResultPreviewInteractorTests.swift */,
+			);
+			path = ResultPreviewTest;
+			sourceTree = "<group>";
+		};
 		E5AC8A762A13CAF600EA7158 = {
 			isa = PBXGroup;
 			children = (
 				E5AC8A812A13CAF600EA7158 /* mathCamera */,
+				E51852F62A1FC7E300F306A5 /* mathCameraTests */,
 				E5AC8A802A13CAF600EA7158 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				E5AC8A7F2A13CAF600EA7158 /* mathCamera.app */,
+				E51852F52A1FC7E200F306A5 /* mathCameraTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +170,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E51852F42A1FC7E200F306A5 /* mathCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E51852FD2A1FC7E300F306A5 /* Build configuration list for PBXNativeTarget "mathCameraTests" */;
+			buildPhases = (
+				E51852F12A1FC7E200F306A5 /* Sources */,
+				E51852F22A1FC7E200F306A5 /* Frameworks */,
+				E51852F32A1FC7E200F306A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E51852FA2A1FC7E300F306A5 /* PBXTargetDependency */,
+			);
+			name = mathCameraTests;
+			productName = mathCameraTests;
+			productReference = E51852F52A1FC7E200F306A5 /* mathCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E5AC8A7E2A13CAF600EA7158 /* mathCamera */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5AC8A932A13CAF900EA7158 /* Build configuration list for PBXNativeTarget "mathCamera" */;
@@ -156,6 +215,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					E51852F42A1FC7E200F306A5 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = E5AC8A7E2A13CAF600EA7158;
+					};
 					E5AC8A7E2A13CAF600EA7158 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -175,11 +238,19 @@
 			projectRoot = "";
 			targets = (
 				E5AC8A7E2A13CAF600EA7158 /* mathCamera */,
+				E51852F42A1FC7E200F306A5 /* mathCameraTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E51852F32A1FC7E200F306A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5AC8A7D2A13CAF600EA7158 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +265,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E51852F12A1FC7E200F306A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51853002A1FC85C00F306A5 /* ResultPreviewInteractorTests.swift in Sources */,
+				E51852F82A1FC7E300F306A5 /* mathCameraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5AC8A7B2A13CAF600EA7158 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +294,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E51852FA2A1FC7E300F306A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5AC8A7E2A13CAF600EA7158 /* mathCamera */;
+			targetProxy = E51852F92A1FC7E300F306A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E5AC8A8D2A13CAF900EA7158 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -226,6 +314,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E51852FB2A1FC7E300F306A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.mathCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mathCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mathCamera";
+			};
+			name = Debug;
+		};
+		E51852FC2A1FC7E300F306A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.mathCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mathCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mathCamera";
+			};
+			name = Release;
+		};
 		E5AC8A912A13CAF900EA7158 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -401,6 +527,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E51852FD2A1FC7E300F306A5 /* Build configuration list for PBXNativeTarget "mathCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E51852FB2A1FC7E300F306A5 /* Debug */,
+				E51852FC2A1FC7E300F306A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E5AC8A7A2A13CAF600EA7158 /* Build configuration list for PBXProject "mathCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

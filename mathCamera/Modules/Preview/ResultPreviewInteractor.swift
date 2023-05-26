@@ -8,6 +8,7 @@
 import Foundation
 import Vision
 import UIKit
+
 struct ImagePreviewViewModel {
     let image: UIImage?
     let data: Data?
