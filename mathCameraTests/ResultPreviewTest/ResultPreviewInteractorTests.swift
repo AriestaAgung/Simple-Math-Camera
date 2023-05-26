@@ -14,7 +14,6 @@ final class ResultPreviewInteractorTests: XCTestCase {
     var interactor: ResultPreviewInteractor?
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        
         interactor = ResultPreviewInteractor.shared
     }
 
@@ -34,7 +33,14 @@ final class ResultPreviewInteractorTests: XCTestCase {
         
     }
     
+    func testProcessedOperation() {
+        var result: ProcessedOperation?
+        result = interactor?.operationDetector("99+55")
+        XCTAssertNotNil(result)
+        XCTAssertEqual("99", result?.firstNum)
+        XCTAssertEqual("+", result?.operandSymbol, "Operand is Not the same")
+        XCTAssertEqual("55", result?.secondNum, "Second number is not the same")
+    }
     
-
     
 }
